@@ -66,7 +66,7 @@ export function ProblemSection() {
 
           {/* Right Side: The Solution/Pristine Image */}
           <div className="relative order-1 lg:order-2">
-            <div className="relative aspect-[4/5] w-full rounded-[var(--radius-card)] overflow-hidden shadow-2xl bg-navy-light">
+            <div className="relative aspect-[4/3] lg:aspect-[4/5] w-full rounded-[var(--radius-card)] overflow-hidden shadow-2xl bg-navy-light">
               <Image
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
                 alt="Pristine restored luxury room"

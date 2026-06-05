@@ -10,8 +10,8 @@ interface ServiceTabsProps {
 
 export function ServiceTabs({ categories, activeCategory, onSelect }: ServiceTabsProps) {
   return (
-    <div className="w-full overflow-x-auto scrollbar-hide py-3">
-      <div className="flex gap-2 sm:gap-3 min-w-max pb-1">
+    <div className="w-full overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+      <div className="flex flex-nowrap gap-2 sm:gap-3 min-w-max pb-1">
         {categories.map((cat) => {
           const isActive = activeCategory === cat;
           return (

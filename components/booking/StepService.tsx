@@ -20,7 +20,7 @@ export function StepService({ watch, setValue, errors }: any) {
             key={svc.id}
             type="button"
             onClick={() => setValue("serviceCategory", svc.id, { shouldValidate: true })}
-            className={`flex items-center gap-3 p-4 rounded-xl border text-left transition-all ${
+            className={`flex items-center gap-3 p-4 min-h-[56px] rounded-xl border text-left transition-all focus-ring ${
               category === svc.id 
                 ? "border-sky bg-sky-light/20 ring-2 ring-sky/50" 
                 : "border-navy/10 hover:border-sky/50 hover:bg-surface focus:outline-none focus:ring-2 focus:ring-sky/30"

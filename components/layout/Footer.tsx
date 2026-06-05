@@ -45,17 +45,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           
           {/* Column 1: Brand Info & Identity */}
-          <div className="space-y-6" id="footer-col-1">
+          <div className="space-y-6 flex flex-col items-center text-center lg:items-start lg:text-left" id="footer-col-1">
             <Logo variant="light" />
             <p className="text-sm text-sky-light/80 leading-relaxed max-w-sm">
               South Florida&apos;s premier luxury property restoration and advanced environmental cleanup agency. Restoring peace of mind and pristine architectural integrity 24 hours a day, 365 days a year.
             </p>
-            <div className="flex items-center gap-3" id="footer-social-links">
+            <div className="flex items-center justify-center lg:justify-start gap-3" id="footer-social-links">
               <a 
                 href={SITE_DATA.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-navy rounded-lg hover:bg-sky hover:text-navy transition-all duration-200"
+                className="p-2 bg-navy rounded-lg hover:bg-sky hover:text-navy transition-all duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Follow us on Facebook"
               >
                 <Facebook size={18} />
@@ -64,7 +64,7 @@ export function Footer() {
                 href={SITE_DATA.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-navy rounded-lg hover:bg-sky hover:text-navy transition-all duration-200"
+                className="p-2 bg-navy rounded-lg hover:bg-sky hover:text-navy transition-all duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram size={18} />
@@ -73,18 +73,18 @@ export function Footer() {
           </div>
 
           {/* Column 2: Navigation Links */}
-          <div className="space-y-5" id="footer-col-2">
-            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2">
+          <div className="space-y-5 text-center lg:text-left" id="footer-col-2">
+            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2 inline-block lg:block">
               Deep Navigation
             </h3>
-            <ul className="space-y-3 text-sm text-sky-light/75">
+            <ul className="space-y-3 text-sm text-sky-light/75 flex flex-col items-center lg:items-start">
               <li>
                 <a 
                   href="#services-section" 
                   onClick={(e) => handleLinkClick(e, "#services-section")}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 group"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group min-h-[44px]"
                 >
-                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform hidden lg:block" />
                   <span>Our Restoration Services</span>
                 </a>
               </li>
@@ -92,9 +92,9 @@ export function Footer() {
                 <a 
                   href="#problem-section" 
                   onClick={(e) => handleLinkClick(e, "#problem-section")}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 group"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group min-h-[44px]"
                 >
-                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform hidden lg:block" />
                   <span>Why Choose Crystal Clear</span>
                 </a>
               </li>
@@ -102,9 +102,9 @@ export function Footer() {
                 <a 
                   href="#area-matrix-section" 
                   onClick={(e) => handleLinkClick(e, "#area-matrix-section")}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 group"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group min-h-[44px]"
                 >
-                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform hidden lg:block" />
                   <span>South Florida Coverage Areas</span>
                 </a>
               </li>
@@ -112,9 +112,9 @@ export function Footer() {
                 <a 
                   href="#reviews-section" 
                   onClick={(e) => handleLinkClick(e, "#reviews-section")}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 group"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group min-h-[44px]"
                 >
-                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform hidden lg:block" />
                   <span>Client Success Stories</span>
                 </a>
               </li>
@@ -122,9 +122,9 @@ export function Footer() {
                 <a 
                   href="#booking-wizard-wrapper" 
                   onClick={(e) => handleLinkClick(e, "#booking-wizard-wrapper")}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 group font-semibold text-sky"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group font-semibold text-sky min-h-[44px]"
                 >
-                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="text-sky group-hover:translate-x-1 transition-transform hidden lg:block" />
                   <span>Schedule Online & Claim Discount</span>
                 </a>
               </li>
@@ -132,32 +132,32 @@ export function Footer() {
           </div>
 
           {/* Column 3: Professional Services Index */}
-          <div className="space-y-5" id="footer-col-3">
-            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2">
+          <div className="space-y-5 text-center lg:text-left" id="footer-col-3">
+            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2 inline-block lg:block">
               Our Capabilities
             </h3>
-            <ul className="space-y-2.5 text-xs text-sky-light/70 font-sans">
-              <li className="flex items-center gap-2">
+            <ul className="space-y-2.5 text-[13px] sm:text-xs text-sky-light/70 font-sans flex flex-col items-center lg:items-start">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Water Extraction & Rapid Dry-Out</span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Fire, Soot, & Smoke Reconstruction</span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Microbial Mold Remediation & Air Purification</span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Hurricane & Dynamic Storm Response</span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Luxury Commercial Environmental Care</span>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center lg:justify-start min-h-[32px]">
                 <span className="h-1 w-1 bg-sky rounded-full" />
                 <span>Premium Post-Construction Deep Cleaning</span>
               </li>
@@ -165,34 +165,34 @@ export function Footer() {
           </div>
 
           {/* Column 4: Contact & Local Dispatch Trust */}
-          <div className="space-y-5" id="footer-col-4">
-            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2">
+          <div className="space-y-5 text-center lg:text-left" id="footer-col-4">
+            <h3 className="text-xs font-mono uppercase tracking-widest text-sky font-semibold border-b border-navy-light/20 pb-2 inline-block lg:block">
               Dispatch & Contacts
             </h3>
-            <ul className="space-y-4 text-sm text-sky-light/80">
-              <li className="flex gap-3">
-                <MapPin size={18} className="text-sky flex-shrink-0 mt-0.5" />
+            <ul className="space-y-4 text-sm text-sky-light/80 flex flex-col items-center lg:items-start">
+              <li className="flex flex-col lg:flex-row items-center lg:items-start gap-2 lg:gap-3">
+                <MapPin size={18} className="text-sky flex-shrink-0 lg:mt-0.5 hidden lg:block" />
                 <div className="space-y-1">
                   <span className="block font-semibold text-xs text-white uppercase tracking-wider">Fort Lauderdale Headquarters:</span>
-                  <address className="not-italic text-xs leading-normal">
+                  <address className="not-italic text-[13px] sm:text-xs leading-normal">
                     {SITE_DATA.dispatchHeadquarters}
                   </address>
                 </div>
               </li>
-              <li className="flex gap-3">
-                <Phone size={18} className="text-sky flex-shrink-0 mt-0.5" />
+              <li className="flex flex-col lg:flex-row items-center lg:items-start gap-2 lg:gap-3">
+                <Phone size={18} className="text-sky flex-shrink-0 lg:mt-0.5 hidden lg:block" />
                 <div className="space-y-0.5">
                   <span className="block font-semibold text-xs text-white uppercase tracking-wider">Direct Dispatch Line:</span>
-                  <a href={SITE_DATA.phoneHref} className="text-sky hover:underline font-semibold block text-base">
+                  <a href={SITE_DATA.phoneHref} className="text-sky hover:underline font-semibold block text-lg lg:text-base min-h-[44px] flex items-center justify-center lg:justify-start">
                     {SITE_DATA.phone}
                   </a>
                 </div>
               </li>
-              <li className="flex gap-3">
-                <Mail size={18} className="text-sky flex-shrink-0 mt-0.5" />
+              <li className="flex flex-col lg:flex-row items-center lg:items-start gap-2 lg:gap-3">
+                <Mail size={18} className="text-sky flex-shrink-0 lg:mt-0.5 hidden lg:block" />
                 <div className="space-y-0.5">
                   <span className="block font-semibold text-xs text-white uppercase tracking-wider">Email Inquiry Desk:</span>
-                  <a href={SITE_DATA.emailHref} className="text-xs hover:underline text-sky-light break-all">
+                  <a href={SITE_DATA.emailHref} className="text-[13px] sm:text-xs hover:underline text-sky-light break-all min-h-[44px] flex items-center justify-center lg:justify-start">
                     {SITE_DATA.email}
                   </a>
                 </div>

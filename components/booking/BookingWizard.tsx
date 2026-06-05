@@ -122,7 +122,7 @@ export function BookingWizard() {
                       <button 
                          type="button" 
                          onClick={() => nextStep(["serviceCategory"])} 
-                         className="bg-navy text-white min-h-[44px] px-6 py-2.5 rounded-lg font-bold hover:bg-navy-light transition-all active:scale-95 shadow-md shadow-navy/10 cursor-pointer"
+                         className="bg-navy text-white min-h-[48px] px-6 py-2.5 rounded-lg font-bold hover:bg-navy-light transition-all active:scale-95 shadow-md shadow-navy/10 cursor-pointer focus-ring"
                       >
                          Continue
                       </button>
@@ -131,18 +131,18 @@ export function BookingWizard() {
 
                 <div className={step === 2 ? "block" : "hidden"}>
                    <StepDetails watch={watch} setValue={setValue} register={register} errors={errors} />
-                   <div className="mt-8 flex justify-between">
+                   <div className="mt-8 flex justify-between gap-4">
                       <button 
                          type="button" 
                          onClick={prevStep}
-                         className="text-navy font-bold min-h-[44px] px-6 py-2.5 rounded-lg hover:bg-navy/5 border border-navy/10 transition-all active:scale-95 cursor-pointer"
+                         className="text-navy font-bold w-full sm:w-auto min-h-[48px] px-6 py-2.5 rounded-lg hover:bg-navy/5 border border-navy/10 transition-all active:scale-95 cursor-pointer focus-ring"
                       >
                          Back
                       </button>
                       <button 
                          type="button" 
                          onClick={() => nextStep(["timeframe"])} 
-                         className="bg-navy text-white min-h-[44px] px-6 py-2.5 rounded-lg font-bold hover:bg-navy-light transition-all active:scale-95 shadow-md shadow-navy/10 cursor-pointer"
+                         className="bg-navy text-white w-full sm:w-auto min-h-[48px] px-6 py-2.5 rounded-lg font-bold hover:bg-navy-light transition-all active:scale-95 shadow-md shadow-navy/10 cursor-pointer focus-ring"
                       >
                          Continue
                       </button>
@@ -151,11 +151,11 @@ export function BookingWizard() {
 
                 <div className={step === 3 ? "block" : "hidden"}>
                    <StepContact register={register} errors={errors} />
-                   <div className="mt-8 flex gap-4">
+                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
                       <button 
                          type="button" 
                          onClick={prevStep}
-                         className="text-navy font-bold min-h-[44px] px-6 py-2.5 rounded-lg hover:bg-navy/5 border border-navy/10 transition-all active:scale-95 cursor-pointer"
+                         className="text-navy font-bold min-h-[48px] px-6 py-2.5 rounded-lg hover:bg-navy/5 border border-navy/10 transition-all active:scale-95 cursor-pointer focus-ring w-full sm:w-auto"
                          disabled={isSubmitting}
                       >
                          Back
@@ -163,7 +163,7 @@ export function BookingWizard() {
                       <button 
                          type="submit" 
                          disabled={isSubmitting}
-                         className="flex-1 bg-sky hover:bg-sky-dark min-h-[44px] text-white font-bold px-6 py-2.5 rounded-lg flex items-center justify-center transition-all shadow-md shadow-sky/20 active:scale-95 disabled:opacity-70 cursor-pointer"
+                         className="flex-1 bg-sky hover:bg-sky-dark min-h-[48px] text-white font-bold px-6 py-2.5 rounded-lg flex items-center justify-center transition-all shadow-md shadow-sky/20 active:scale-95 disabled:opacity-70 cursor-pointer focus-ring w-full"
                       >
                          {isSubmitting ? (
                            <><Loader2 size={18} className="animate-spin mr-2" /> Submitting...</>

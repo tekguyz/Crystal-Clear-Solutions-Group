@@ -12,7 +12,7 @@ export function StepContact({ register, errors }: any) {
           autoComplete="name"
           {...register("name")}
           placeholder="John Doe"
-          className={`w-full min-h-[44px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 text-sm transition-all bg-surface ${
+          className={`w-full min-h-[48px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 focus-ring text-sm transition-all bg-surface ${
             errors?.name ? "border-error focus:border-error" : "border-navy/10 focus:border-sky/50"
           }`}
         />
@@ -28,7 +28,7 @@ export function StepContact({ register, errors }: any) {
             autoComplete="email"
             {...register("email")}
             placeholder="john@example.com"
-            className={`w-full min-h-[44px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 text-sm transition-all bg-surface ${
+            className={`w-full min-h-[48px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 focus-ring text-sm transition-all bg-surface ${
               errors?.email ? "border-error focus:border-error" : "border-navy/10 focus:border-sky/50"
             }`}
           />
@@ -43,7 +43,7 @@ export function StepContact({ register, errors }: any) {
             autoComplete="tel"
             {...register("phone")}
             placeholder="(305) 555-0123"
-            className={`w-full min-h-[44px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 text-sm transition-all bg-surface ${
+            className={`w-full min-h-[48px] p-3.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 focus-ring text-sm transition-all bg-surface ${
               errors?.phone ? "border-error focus:border-error" : "border-navy/10 focus:border-sky/50"
             }`}
           />

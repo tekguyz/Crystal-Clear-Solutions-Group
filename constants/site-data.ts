@@ -1,6 +1,7 @@
 export const SITE_DATA = {
   name: "Crystal Clear Solutions Group",
   shortName: "Crystal Clear",
+  url: "https://crystal-clear-solutions-group.vercel.app",
   phone: "(305) 354-6870",
   phoneHref: "tel:+13053546870",
   email: "crystalclearsolutiongroup@gmail.com",
@@ -9,10 +10,10 @@ export const SITE_DATA = {
   eventLocation: "2900 Griffin Rd, Fort Lauderdale, FL 33312",
   rating: "4.9",
   reviewCount: "73",
-  googleBusinessUrl: "[https://share.google/Rr7Y4LdSRGetRM1th](https://share.google/Rr7Y4LdSRGetRM1th)",
+  googleBusinessUrl: "https://share.google/Rr7Y4LdSRGetRM1th",
   social: {
-    facebook: "[https://www.facebook.com/profile.php?id=61557295092463](https://www.facebook.com/profile.php?id=61557295092463)",
-    instagram: "[https://www.instagram.com/crystal_clear_solutions_groupk](https://www.instagram.com/crystal_clear_solutions_groupk)",
+    facebook: "https://www.facebook.com/profile.php?id=61557295092463",
+    instagram: "https://www.instagram.com/crystal_clear_solutions_groupk",
   },
   promo: {
     title: "Summer Cleaning Special",

@@ -14,7 +14,7 @@ export function StepDetails({ watch, setValue, register, errors }: any) {
               key={tf}
               type="button"
               onClick={() => setValue("timeframe", tf, { shouldValidate: true })}
-              className={`p-3 text-sm font-semibold rounded-xl border text-center transition-all ${
+              className={`p-3 min-h-[48px] text-sm font-semibold rounded-xl border text-center transition-all focus-ring ${
                 timeframe === tf
                 ? "border-sky bg-sky-light/20 ring-2 ring-sky/50 text-navy" 
                 : "border-navy/10 text-ink/80 hover:border-sky/50 hover:bg-surface focus:outline-none focus:ring-2 focus:ring-sky/30"
@@ -35,7 +35,7 @@ export function StepDetails({ watch, setValue, register, errors }: any) {
           {...register("details")}
           rows={3}
           placeholder="Briefly describe your situation..."
-          className="w-full p-4 border border-navy/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 focus:border-sky/50 text-sm placeholder:text-muted transition-all resize-none bg-surface"
+          className="w-full p-4 border border-navy/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky/50 focus-ring focus:border-sky/50 text-sm placeholder:text-muted transition-all resize-none bg-surface"
         />
       </div>
     </div>

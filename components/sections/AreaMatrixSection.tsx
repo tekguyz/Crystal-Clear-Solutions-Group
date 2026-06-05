@@ -38,7 +38,7 @@ export function AreaMatrixSection() {
                 <MapPin size={24} className="text-sky shrink-0" />
                 <h3 className="text-lg font-bold tracking-widest uppercase text-white">{region.title}</h3>
               </div>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-y-3 gap-x-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-3 gap-x-4">
                 {region.cities.map((city) => (
                   <li key={city} className="flex items-center gap-3 text-[14px] text-sky-light/80 font-medium hover:text-white transition-colors">
                     <span className="w-1.5 h-1.5 rounded-full bg-sky/60 shadow-[0_0_8px_rgba(66,192,251,0.6)]" />

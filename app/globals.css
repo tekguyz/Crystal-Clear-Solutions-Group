@@ -19,15 +19,25 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 6rem;
   -webkit-text-size-adjust: 100%;
   scrollbar-gutter: stable;
   background-color: var(--color-surface);
   color: var(--color-ink);
+  overflow-x: hidden;
 }
 
 body {
   antialiased: true;
+  overflow-x: hidden;
+}
+
+/* High-contrast accessibility focus utility */
+@utility focus-ring {
+  &:focus-visible {
+    outline: 2px solid var(--color-sky);
+    outline-offset: 2px;
+  }
 }
 
 @utility scrollbar-hide {

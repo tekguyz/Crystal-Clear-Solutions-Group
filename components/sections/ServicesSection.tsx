@@ -56,7 +56,7 @@ export function ServicesSection() {
         </MotionProvider>
 
         {/* Sticky Tabs Navigation */}
-        <div className="sticky top-[68px] sm:top-[76px] z-30 bg-surface/95 backdrop-blur-md pt-2 pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 mb-6 lg:mb-8 border-b border-navy/5">
+        <div className="sticky top-[72px] sm:top-[76px] z-30 bg-surface/95 backdrop-blur-md pt-2 pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 mb-6 lg:mb-8 border-b border-navy/5">
           <ServiceTabs 
             categories={categories} 
             activeCategory={activeCategory} 
