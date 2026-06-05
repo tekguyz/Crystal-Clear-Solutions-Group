@@ -1,0 +1,8 @@
+{
+  "name": "Crystal Clear Solutions Group",
+  "description": "High-conversion web infrastructure for a premium property restoration and luxury environmental cleanup agency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

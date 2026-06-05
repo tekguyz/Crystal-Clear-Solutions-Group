@@ -1,11 +1,16 @@
-<div align="center">
+# Deployment Configuration
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Environment Variables
+Before deploying, ensure you have set the following required environment variables:
+- `RESEND_API_KEY`: API Key for the Resend SDK for dispatching forms.
 
-  <h1>Built with AI Studio</h2>
+## Vercel Deployment Steps
+1. Import the repository into Vercel.
+2. In the Environment Variables settings, configure `RESEND_API_KEY`.
+3. Set `NEXT_PUBLIC_SITE_URL` to your production URL.
+4. Click **Deploy**.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Post-Launch Verification
+1. Verify any associated DNS records are correctly routing to Vercel.
+2. Verify Resend domain authentication so emails do not land in spam.
+3. Test the booking widget end-to-end.
